@@ -1,0 +1,269 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+}
+
+/* Centering layout for each page */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #eef2f7;
+  padding: 20px;
+}
+
+/* Titles */
+h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #2b579a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  border-bottom: 3px solid #4caf50;
+  padding-bottom: 10px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"],
+select,
+input[type="date"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 24px;
+  margin: 15px 0;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Logout button */
+.logout-button {
+  margin-top: 20px;
+  background-color: #e94b3c;
+}
+
+.logout-button:hover {
+  background-color: #c7392e;
+}
+
+/* Main Actions Page Styling */
+.main-actions-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffffff, #f3f4f9);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-actions-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2b579a;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.main-actions-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-actions-buttons button {
+  width: 100%;
+  max-width: 250px;
+  margin: 10px 0;
+}
+
+/* App general styling */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Status table styling */
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.status-table th,
+.status-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.status-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.status-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.status-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Product Details Section */
+.product-details-section {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin: auto;
+}
+
+.product-details-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0px;
+}
+
+.product-info {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+.product-info strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Status Updates Subtitle */
+.status-updates-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  padding-top: 5px;
+  border-top: 1px solid #ddd;
+}
+
+/* Retail Page Styles */
+.batches-section {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.batches-section h3 {
+  color: #4CAF50;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.batch-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.batch-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.batch-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.batch-item p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.batch-item strong {
+  color: #2b579a;
+}
+
+.action-button {
+  padding: 12px 18px;
+  margin: 10px;
+  font-size: 16px;
+  color: white
+}
